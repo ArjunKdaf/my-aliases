@@ -7,9 +7,9 @@
 #alias autoclean='sudo dnf autoremove -y'
 
 alias py='python3'
-alias vim='nvim'
+alias vi='nvim'
 
-alias upgrade='sudo pacman -Syyu --noconfirm && paru -Syyu --noconfirm'
+alias upgrade='sudo pacman -Syu --noconfirm && yay -Syu --noconfirm && flatpak upgrade -y'
 alias install='sudo pacman -S --noconfirm'
 alias remove='sudo pacman -Rns --noconfirm'
 alias cleanup='sudo pacman -Rns $(pacman -Qtdq)'
